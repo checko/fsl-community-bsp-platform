@@ -3,14 +3,14 @@
 
   <default revision="dylan" sync-j="4"/>
 
-  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git://github.com/Freescale" name="freescale"/>
-  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="http://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/Freescale" name="freescale"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
 
   <project remote="yocto" revision="dylan" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="dylan" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
 
-  <project remote="oe" revision="dylan" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="oe" revision="dylan" name="meta-oe" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="dylan" name="fsl-community-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
